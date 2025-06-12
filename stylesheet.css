@@ -322,3 +322,52 @@ h3 {
     margin-top: 1%;
     padding: 10px 20px;
 }
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.7;
+  }
+  25% {
+    transform: translate(40px, -60px) scale(1.1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(-60px, 40px) scale(1.2);
+    opacity: 0.6;
+  }
+  75% {
+    transform: translate(30px, 60px) scale(0.9);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.7;
+  }
+}
+.ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1;
+}
+.ball span {
+    background: rgba(1, 22, 39, 0.655);
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 70%;
+    backface-visibility: hidden;
+    filter: blur(10px);
+    animation: move 12s linear infinite;
+}
+.ball span:nth-child(1) { left: 10vw; top: 20vh; animation-duration: 14s; }
+.ball span:nth-child(2) { left: 70vw; top: 10vh; animation-duration: 18s; }
+.ball span:nth-child(3) { left: 50vw; top: 60vh; animation-duration: 16s; }
+.ball span:nth-child(4) { left: 80vw; top: 80vh; animation-duration: 20s; }
+.ball span:nth-child(5) { left: 20vw; top: 70vh; animation-duration: 22s; }
+.ball span:nth-child(6) { left: 40vw; top: 30vh; animation-duration: 19s; }
+.ball span:nth-child(7) { left: 60vw; top: 50vh; animation-duration: 17s; }
