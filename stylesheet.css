@@ -161,7 +161,7 @@ h3 {
 }
 .aboutme {
     display: grid;
-    margin-top: 4%;
+    margin-top: 3%;
     grid-template-columns: repeat(3,200px);
     grid-auto-rows: 150px;
     gap: 8px;
@@ -371,3 +371,23 @@ h3 {
 .ball span:nth-child(5) { left: 20vw; top: 70vh; animation-duration: 22s; }
 .ball span:nth-child(6) { left: 40vw; top: 30vh; animation-duration: 19s; }
 .ball span:nth-child(7) { left: 60vw; top: 50vh; animation-duration: 17s; }
+.threesections {
+    display:flex;
+    flex-direction: column;
+}
+.aboutmetitle {
+    text-align: center;
+    font-size: 50px;
+}
+.educationtitle {
+    text-align: center;
+    font-size: 30px;
+}
+.skillstitle {
+    text-align: center;
+    font-size: 30px;
+}
+.aspirationstitle {
+    text-align: center;
+    font-size: 30px;
+}
