@@ -119,6 +119,7 @@ h3 {
     display: block;
     margin-top: -50px;
     margin-left: 48.5%;
+    cursor: pointer;
     animation: bounce 2s infinite;
 }
 
@@ -388,7 +389,7 @@ h3 {
     flex-direction: column;
     align-items: center;      
     text-align: center;       
-    padding: 10px 10px;
+    padding: 5px 5px;
 
 }
 .threesections h2 {
@@ -405,9 +406,29 @@ h3 {
 .education {
     color: white;
     margin-left: 3%;
+    cursor: pointer;
 }
+.educationpicture {
+    display: none;
+    border-radius: 5%;
+}
+.education, .skills, .aspirations {
+    transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.education:hover, .skills:hover, .aspirations:hover {
+    transform: scale(1.2);
+}
+
 .skills {
     width: 110%;
+    color: white;
+    margin-left: 3%;
+    cursor: pointer;
+}
+.skillspicture {
+    display: none;
+    border-radius: 5%;
 }
 .skillstitle {
     text-align: center;
@@ -426,4 +447,10 @@ h3 {
 .aspirationstitle {
     
     font-size: 40px;
+}
+.skills, .education {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1%;
 }
