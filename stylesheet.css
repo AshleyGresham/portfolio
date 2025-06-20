@@ -385,9 +385,6 @@ h3 {
 .education, .skills, .aspirations {
     background-color: rgba(1, 22, 39, 0.714);
     border-radius: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;      
     text-align: center;       
     padding: 5px 5px;
 
@@ -411,13 +408,6 @@ h3 {
 .educationpicture {
     display: none;
     border-radius: 5%;
-}
-.education, .skills, .aspirations {
-    transition: transform 0.3s ease; /* Add smooth transition */
-}
-
-.education:hover, .skills:hover, .aspirations:hover {
-    transform: scale(1.2);
 }
 
 .skills {
