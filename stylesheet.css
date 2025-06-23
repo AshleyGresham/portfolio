@@ -3,7 +3,7 @@ body {
     color:rgb(1,22,39);
     margin:0;
     opacity: 0; /* Start invisible */
-    animation: fadeIn 1.5s ease-in forwards; 
+    animation: fadeIn 1s ease-in forwards; 
 }
 
 @keyframes fadeIn {
@@ -20,33 +20,71 @@ nav {
 .navbar{
     display: flex;
     justify-content: center;
-    gap: 150px;
+    gap: 200px;
 }
 .navbar button {
-    margin-top: 5px;;
-    padding: 10px 20px;
+    margin-top: 15px;
+    padding: 5px 15px;
     font-size: 25px;
     color: white;
     background-color: rgb(1,22,39);
-    border-top: none;
-    border-bottom: none;
+    border:none;
     border-right: 2px solid white;
     border-left: 2px solid white;
     
     cursor: pointer;  
 }
-#search{
-    margin-top: 5px;
-    padding: 10px 20px;
-    font-size: 25px;
-    color: black;
-    background-color: white;
-    border:none;
-    border-radius: 5px;
-    align-items: right;;
-    cursor: pointer;  
-    width:300px;
+.navbar button:hover{
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    background-color: rgb(1,22,39);
+    color: white;
+    padding: 5px 15px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    margin-top: 1%;
+    display: none;
+    position: absolute;
+    background-color: rgb(1,22,39);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    flex-direction: column;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #fff2;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Optional: Style dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #163047;
+}
+
 .intro {
     display:flex;
     flex-direction: column;
@@ -182,7 +220,7 @@ h3 {
 
 .connectwithme {
     font-size: 95px;
-    margin-left:1%;
+    margin-left:3%;
     color: rgb(1,22,39);
     margin-top: -8%;
 }
@@ -394,7 +432,7 @@ h3 {
 }
 .aboutmetitle {
     text-align: center;
-    font-size: 60px;
+    font-size: 70px;
 }
 .educationtitle {
     text-align: center;
@@ -413,7 +451,6 @@ h3 {
 .skills {
     width: 110%;
     color: white;
-    margin-left: 3%;
     cursor: pointer;
 }
 .skillspicture {
@@ -438,9 +475,36 @@ h3 {
     
     font-size: 40px;
 }
-.skills, .education {
+.skills, .education, .aspirations{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1%;
+    gap: 1.5%;
+}
+
+.aspirationspicture {
+    display: none;
+    border-radius: 5%;
+}
+
+.projects {
+    background-color: rgb(138,150,136);
+}
+.projecttitle {
+    margin-top: 0;
+    color: rgb(1,22,39);
+    background-color: rgb(217,188,175);
+    font-size: 80px;
+    font-weight: bold;
+    height: 190px;
+    width: 66%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+.project {
+    background-color: rgb(1,22,39);
+    width:66%;
+    height: 700px;
+    margin-top: -5%;
 }
