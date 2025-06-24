@@ -507,4 +507,30 @@ h3 {
     width:66%;
     height: 700px;
     margin-top: -5%;
+
+}
+.favprojects{  
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-left: -1%;
+}
+.favprojects img {
+    margin-top: 2%;
+    height: 150px;
+    width: 250px;
+    border: 2px solid white;
+    object-fit: cover;
+}
+
+.favprojects p{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.ptitle {
+    color: white;
+    font-size: 50px;
+    padding-top:20px;
+    text-align: center;
 }
