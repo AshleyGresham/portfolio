@@ -513,6 +513,7 @@ h3 {
     display: flex;
     justify-content: center;
     gap: 100px;
+    margin-top: -1%;
     margin-left: -1%;
 }
 .favprojects img {
@@ -533,4 +534,23 @@ h3 {
     font-size: 50px;
     padding-top:20px;
     text-align: center;
+}
+.githublink {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.githublink p {
+    color: white;
+    font-size: 25px;
+    margin-top: .90%;
+    text-align: center;
+}
+.githublink button {
+    background-image: url("githubwhite.jpg");
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    background-size: 50px;
+    cursor: pointer;
 }
