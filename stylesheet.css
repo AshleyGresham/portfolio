@@ -497,14 +497,12 @@ h3 {
     font-size: 80px;
     font-weight: bold;
     height: 190px;
-    width: 66%;
     text-align: center;
     justify-content: center;
     padding-top: 60px;
 }
 .project {
     background-color: rgb(1,22,39);
-    width:66%;
     height: 700px;
     margin-top: -5%;
 
@@ -514,7 +512,6 @@ h3 {
     justify-content: center;
     gap: 100px;
     margin-top: -1%;
-    margin-left: -1%;
 }
 .favprojects img {
     margin-top: 2%;
@@ -546,11 +543,38 @@ h3 {
     margin-top: .90%;
     text-align: center;
 }
-.githublink button {
-    background-image: url("githubwhite.jpg");
+.githublink img {
     width: 50px;
     height: 50px;
     border-radius: 10%;
     background-size: 50px;
     cursor: pointer;
+}
+.projectcontent{
+    display: flex;
+}
+.leftsideprojects {
+    width: 75%;
+}
+.rightsideprojects {
+    width: 25%;
+    text-align: center;
+}
+.comforttitle {
+    color: rgb(1,22,39);
+    font-size: 35px;
+    margin-top: .90%;
+}
+#progressbar {
+  background-color: rgb(1,22,39);
+  width: 90%;
+  border-radius: 13px;
+  padding: 3px;
+}
+
+#progressbar>div {
+  background-color: rgb(217,188,175);
+  width: 40%;
+  height: 20px;
+  border-radius: 10px;
 }
