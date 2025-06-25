@@ -490,6 +490,7 @@ h3 {
 
 .projects {
     background-color: rgb(1,22,39);
+    overflow: hidden;
 }
 .projecttitle {
     margin-top: 0;
@@ -558,13 +559,14 @@ h3 {
     width: 75%;
 }
 .rightsideprojects {
+    border-top: 2px solid white;
     width: 25%;
     text-align: center;
 }
 .comforttitle {
     color: white;
     font-size: 35px;
-    margin-top: .90%;
+    margin-top: 3%;
 }
 .rightsideprojects img{
     width: auto;
