@@ -488,7 +488,7 @@ h3 {
 }
 
 .projects {
-    background-color: rgb(138,150,136);
+    background-color: rgb(1,22,39);
 }
 .projecttitle {
     margin-top: 0;
@@ -502,7 +502,7 @@ h3 {
     padding-top: 60px;
 }
 .project {
-    background-color: rgb(1,22,39);
+    background-color: rgb(138,150,136);
     height: 700px;
     margin-top: -5%;
 
@@ -522,12 +522,12 @@ h3 {
 }
 
 .favprojects p{
-    color: white;
+    color: rgb(1,22,39);
     font-size: 25px;
     text-align: center;
 }
 .ptitle {
-    color: white;
+    color: rgb(1,22,39);
     font-size: 50px;
     padding-top:20px;
     text-align: center;
@@ -538,7 +538,7 @@ h3 {
     gap: 10px;
 }
 .githublink p {
-    color: white;
+    color: rgb(1,22,39);
     font-size: 25px;
     margin-top: .90%;
     text-align: center;
@@ -561,20 +561,42 @@ h3 {
     text-align: center;
 }
 .comforttitle {
-    color: rgb(1,22,39);
+    color: white;
     font-size: 35px;
     margin-top: .90%;
+}
+.rightsideprojects img{
+    width: auto;
+    height: 50px;
 }
 #progressbar {
   background-color: rgb(1,22,39);
   width: 90%;
+  border: 2px solid white;
   border-radius: 13px;
   padding: 3px;
+  margin: 10px 10px;
+  margin-left: 3%;
 }
 
 #progressbar>div {
-  background-color: rgb(217,188,175);
-  width: 40%;
+  background-color: white;
   height: 20px;
   border-radius: 10px;
+}
+.htmlbar {
+    width: 90%;
+}
+.cssbar {
+    width: 70%;
+}
+.jsbar {
+    width: 50%;
+}
+
+.cbar {
+    width: 80%;
+}
+.javabar {
+    width: 75%;
 }
