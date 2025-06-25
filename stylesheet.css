@@ -421,8 +421,9 @@ h3 {
     margin-top: -2%;
 }
 .education, .skills, .aspirations {
-    background-color: rgba(1, 22, 39, 0.714);
+    background-color: rgba(1, 22, 39, 0.796);
     border-radius: 10%;
+    cursor: pointer;
     text-align: center;       
     padding: 5px 5px;
 
@@ -599,4 +600,60 @@ h3 {
 }
 .javabar {
     width: 75%;
+}
+.creditsbody {
+    background-color: rgb(217,188,175);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+.topimages {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 1%;
+    margin-left: -5%;
+}
+.topimages img {
+    height: 200px;
+}
+.uepic {
+    object-fit: cover;
+    width: 400px;
+}
+.jackpic {
+    width: 350px;
+    object-fit: cover;
+}
+.creditcontent {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: -1.5%;
+}
+.creditcontent div {
+    background-color: rgba(1, 22, 39, 0.856);
+    border-radius: 20%;
+    margin: 2% 2%;
+}
+.me {
+    margin-left: 1%;
+    font-size: 60px;
+    color: rgb(1,22,39);
+}
+.creditcontent h1 {
+    font-size: 40px;
+    margin-bottom: -1%;
+}
+.creditcontent p {
+    font-size: 25px;
+    margin: 2%;
+}
+.rightcredit {
+    width: 60%;
+}
+.creditsthanks {
+    text-align: left;
+    padding-left: 15px;
+    line-height: 1.5;
 }

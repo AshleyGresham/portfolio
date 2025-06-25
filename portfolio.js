@@ -152,3 +152,53 @@ document.addEventListener('click', function(event) {
         resetSections();
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navbar = document.querySelector('.navbar');
+    if (!navbar) return;
+    // Select all focusable nav items (buttons and links)
+    const navItems = navbar.querySelectorAll('button, a');
+
+    navItems.forEach((item, idx) => {
+        item.addEventListener('keydown', function(e) {
+            // LEFT/RIGHT for main nav
+            if (e.key === 'ArrowRight') {
+                e.preventDefault();
+                navItems[(idx + 1) % navItems.length].focus();
+            } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                navItems[(idx - 1 + navItems.length) % navItems.length].focus();
+            }
+            // DOWN for dropdowns
+            else if (e.key === 'ArrowDown') {
+                // If this is a dropdown button, focus first dropdown link
+                const dropdown = item.parentElement.querySelector('.dropdown-content');
+                if (dropdown) {
+                    const dropdownLinks = dropdown.querySelectorAll('a');
+                    if (dropdownLinks.length > 0) {
+                        e.preventDefault();
+                        dropdownLinks[0].focus();
+                    }
+                }
+            }
+        });
+    });
+
+    // Dropdown links: up/down navigation
+    const dropdownLinks = document.querySelectorAll('.dropdown-content a');
+    dropdownLinks.forEach((link, idx, arr) => {
+        link.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                arr[(idx + 1) % arr.length].focus();
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                arr[(idx - 1 + arr.length) % arr.length].focus();
+            } else if (e.key === 'Escape') {
+                // ESC returns focus to dropdown button
+                const dropdownBtn = link.closest('.dropdown').querySelector('.dropbtn');
+                if (dropdownBtn) dropdownBtn.focus();
+            }
+        });
+    });
+});
