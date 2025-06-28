@@ -3,22 +3,23 @@
 <head>
     <title>Contact</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script defer src="portfolio.js"></script>
 </head>
 <body class="contactbody">
     <audio id="bg-music" src="saxmusic.mp3" loop></audio>
         <nav>
         <div class = "navbar">
-            <a href = "portfolio.html"><img class = "homebutton" src ="https://static.vecteezy.com/system/resources/previews/021/948/181/non_2x/3d-home-icon-free-png.png" alt = "Home Button"></a>
+            <a href = "portfolio.html"><img class = "homebutton" tabindex="0" src ="https://static.vecteezy.com/system/resources/previews/021/948/181/non_2x/3d-home-icon-free-png.png" alt = "Home Button"></a>
             <div class="dropdown">
-            <button class="dropbtn">Navigation ⮟</button>
+            <button class="dropbtn" tabindex="0">Navigation ⮟</button>
             <div class="dropdown-content">
-                <a href="https://www.linkedin.com/in/ashley-gresham-55ab6936a">LinkedIn</a>
-                <a href="aboutme.html">About Me</a>
-                <a href="projects.html">Projects</a>
+                <a href="https://www.linkedin.com/in/ashley-gresham-55ab6936a" tabindex="0">LinkedIn</a>
+                <a href="aboutme.html" tabindex="0">About Me</a>
+                <a href="projects.html" tabindex="0">Projects</a>
                 </div>
-            </div>
-            <button>Settings</button>               
-            <a href ="credits.html"><button>Credits</button></a>
+            </div>           
+            <a href ="credits.html"><button tabindex="0">Credits</button></a>   
+            <button id="music-toggle" tabindex="0">Play Music</button>
         </div>
         </nav>
     <div class ="topsection">
@@ -45,11 +46,11 @@
         <h2 class ="contact">Contact</h2>
         <div class="contactformrow">
             <div class="contactformleft">
-                <input type="text" name="name" placeholder="Your Name" aria-label="Your Name" required />
-                <input type="email" name="email" placeholder="Your Email" aria-label="Your Email" required />
+                <input type="text" class="nameinput" placeholder="Your Name" aria-label="Your Name" required />
+                <input type="email" class="emailinput" placeholder="Your Email" aria-label="Your Email" required />
             </div>
             <div class="contactformright">
-                <textarea name="message" placeholder="Your Message" aria-label="Your Message" required></textarea>
+                <textarea class="message" placeholder="Your Message" aria-label="Your Message" required></textarea>
             </div>
         </div>
             <button id ="submit" type="submit">Send</button>

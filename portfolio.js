@@ -3,7 +3,7 @@ let education = document.querySelector(".education");
 let skills = document.querySelector(".skills");
 let aspirations = document.querySelector(".aspirations");
 let settings = document.querySelector(".settingsbutton");
-
+let submit = document.querySelector("#submit");
 
 if(downarrow !== null) {
 
@@ -15,8 +15,16 @@ if(downarrow !== null) {
         }
     });
 }
-
-
+if (submit !== null) {
+    submit.addEventListener('click', function(){
+        let name = document.querySelector('.nameinput');
+        let email = document.querySelector('.emailinput');
+        let message = document.querySelector('.message');
+        name.value = "";
+        email.value = "";
+        message.value = "";
+    });
+}
 if (education !== null) {
         function resetSections() {
         // Education
@@ -97,7 +105,7 @@ if (education !== null) {
         aspirations.style.display = "none";
         education.style.width = "1100px";
         education.style.height = "400px";
-        education.style.marginLeft = "150px";
+        education.style.marginLeft = "200px";
         educationtitle.style.marginTop = "-2%";
         let educationpicture = document.querySelector(".educationpicture");
         educationpicture.style.display = "block";
@@ -118,14 +126,14 @@ if (education !== null) {
         aspirations.style.display = "none";
         skills.style.width = "1000px";
         skills.style.height = "400px";
-        skills.style.marginLeft = "150px";
+        skills.style.marginLeft = "200px";
         skillspicture.style.display = "block";
         skillspicture.style.height = "350px";
         skillspicture.style.width = "auto";
         skillspicture.style.marginRight = "20px";
         skillstitle.style.marginTop = "-2%";
         skillscontent.style.width = "50%";
-        skillslist.style.marginLeft = "2%";
+        skillslist.style.marginLeft = "0%";
     });
     aspirations.addEventListener('click', function() {
         let aspirationstitle = document.querySelector(".aspirationsstitle");
@@ -137,14 +145,14 @@ if (education !== null) {
         skills.style.display = "none";
         aspirations.style.width = "1000px";
         aspirations.style.height = "400px";
-        aspirations.style.marginLeft = "150px";
+        aspirations.style.marginLeft = "200px";
         aspirationsimage.style.display = "block";
         aspirationsimage.style.height = "350px";
         aspirationsimage.style.width = "auto";
         aspirationsimage.style.marginRight = "20px";
         aspirationstitle.style.marginTop = "-2%";
         aspirationscontent.style.width = "50%";
-        aspirationstext.style.marginLeft = "2%";
+        aspirationstext.style.marginLeft = "0%";
     });
     document.addEventListener('click', function(event) {
         // If the click is NOT inside any of the three sections
