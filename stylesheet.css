@@ -65,7 +65,7 @@ nav {
     background-color: rgb(1,22,39);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 101;
     flex-direction: column;
 }
 /* Links inside the dropdown */
@@ -427,11 +427,13 @@ h3 {
     display:flex;
     justify-content: space-between;
     margin-top: 1%;
+    z-index: 100;
     gap: 5%;
 }
 .threesections p {
     font-size: 25px;
     margin-top: -2%;
+    z-index: 100;
 }
 .education, .skills, .aspirations {
     background-color: rgba(1, 22, 39, 0.796);
@@ -451,6 +453,7 @@ h3 {
 }
 .aboutmehead img {
     padding-top: 1.5%;
+    z-index: 100;
     height: 175px;
     width: 400px;
     object-fit: cover;
@@ -643,6 +646,7 @@ h3 {
 }
 .topimages img {
     height: 200px;
+    border-radius: 10%;
 }
 .uepic {
     object-fit: cover;

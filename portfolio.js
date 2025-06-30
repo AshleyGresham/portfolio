@@ -4,6 +4,55 @@ let skills = document.querySelector(".skills");
 let aspirations = document.querySelector(".aspirations");
 let settings = document.querySelector(".settingsbutton");
 let submit = document.querySelector("#submit");
+let home = document.querySelector(".homebutton");
+let navigation = document.querySelector(".dropbtn");
+let dropdownlist = document.querySelector(".dropdown-content");
+let linkedin = document.querySelector("#linkedinnav");
+let aboutme = document.querySelector("#aboutmenav");
+let contact = document.querySelector("#contactnav");
+let projects = document.querySelector("#projectsnav");
+let credits = document.querySelector('#creditsnav');
+let musicbutton =  document.querySelector('#music-toggle');
+
+let navbarbuttons = [home, navigation, credits, musicbutton];
+let dropdownbuttons = [navigation, linkedin, aboutme, contact, projects];
+let number = -1;
+let updownnumber = 0;
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'ArrowLeft') {
+        number -= 1;
+        if (number <= -1) {
+            number = 3;
+        }
+        navbarbuttons[number].focus();
+    } else if (event.key === 'ArrowRight') {
+        number += 1;
+        if (number >= 4) {
+            number = 0;
+        }
+        navbarbuttons[number].focus();
+    } 
+    if (number == 1){
+        dropdownlist.style.display = "block";
+        if (event.key === 'ArrowUp') {
+            updownnumber -= 1;
+            if (updownnumber <= -1) {
+            updownnumber = 4;
+            }
+        } else if (event.key === 'ArrowDown') {
+            updownnumber += 1;
+            if (updownnumber >= 5) {
+                updownnumber = 0;
+            }
+        }
+        dropdownbuttons[updownnumber].focus();
+    }
+    else {
+        dropdownlist.style.display = "";
+        updownnumber = 0;
+    }
+});
+
 
 if(downarrow !== null) {
 
