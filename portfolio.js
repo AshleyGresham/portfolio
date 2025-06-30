@@ -34,7 +34,6 @@ document.addEventListener('keydown', function(event) {
     } 
     if (number == 1){
         dropdownlist.style.display = "block";
-        event.preventDefault();
         if (event.key === 'ArrowUp') {
             updownnumber -= 1;
             if (updownnumber <= -1) {
