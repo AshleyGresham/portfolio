@@ -89,7 +89,6 @@ nav {
 
 
 .homebutton {
-    position: fixed;
     z-index: 100;
     padding-top: 10px;
     padding-left: 10px;
@@ -143,6 +142,7 @@ h3 {
     
 }
 .icons {
+    padding-top: 3%;
     display: grid;
     grid-template-columns: 130px 130px 130px;
     grid-template-rows: 130px 130px 130px;
@@ -175,15 +175,14 @@ h3 {
 }
 .uparrow {
     background-color: rgba(240, 248, 255, 0.749);
-    border-radius: 52%;
+    border-radius: 53%;
     margin-top: 1%;
     width: 50px;
     height: 50px;
-    display: block;
     margin-left: 48.5%;
     display: none;
     cursor: pointer;
-    animation: bounce 2s infinite;
+    animation: bounceup 2s infinite;
 }
 
 @keyframes bounce {
@@ -195,6 +194,15 @@ h3 {
     transform: translate(0, 0px);
   }
 }
+@keyframes bounceup {
+  from {
+    transform: translate(0, 0px) rotate(180deg);
+  } 50% {
+    transform: translate(0, -15px) rotate(180deg);
+  } to {
+    transform: translate(0, 0px) rotate(180deg);
+  }
+}
 
 .aboutmesection {
     background-color: rgb(1,22,39);
@@ -203,9 +211,10 @@ h3 {
 }
 
 .aboutmesection h2 {
-    margin-top: 3%;
+    margin-top: 2.5%;
     text-align: center;
     font-size: 63px;
+    margin-bottom: 1%;
 }
 
 .leadingtext {
@@ -238,7 +247,10 @@ h3 {
     object-fit: cover;
     border: solid 2px rgb(217,188,175);
 }
-
+.bottomscroll {
+    color:rgb(1,22,39);
+    font-size: 25px;
+}
 .contactbody {
     background-color: rgb(1,22,39);
     background-image: url('images/contactbackground.png');
@@ -654,9 +666,6 @@ h3 {
     overflow: hidden;
 }
 
-.navbar a:focus .homebutton {
-    outline: 1px solid #fcfdfd;
-}
 
 .topimages {
     display: flex;

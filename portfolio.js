@@ -1,4 +1,5 @@
 let downarrow = document.querySelector(".arrow");
+let uparrow = document.querySelector('.uparrow');
 let education = document.querySelector(".education");
 let skills = document.querySelector(".skills");
 let aspirations = document.querySelector(".aspirations");
@@ -53,32 +54,25 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
-let down = false;
  
 if(downarrow !== null) {
     
     downarrow.addEventListener('click', function() {
-        let target = document.querySelector('.aboutmecontainer');
+        let target = document.querySelector('.bottomscroll');
         if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
+            target.scrollIntoView({behavior: 'smooth'});
         }
-        down =! down;
-    });
-    uparrow.addEventListener('click', function() {
-        let target = document.querySelector('.intro');
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-        }
-        down =! down;
-    });
-    if (down === false) {
-        downarrow.style.display = "block";
-        uparrow.style.display = "none";
-    }
-    if (down === true) {
         downarrow.style.display = "none";
         uparrow.style.display = "block";
-    }
+    });
+    uparrow.addEventListener('click', function() {
+        let target = document.querySelector('.navbar');
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth'});
+        }
+        downarrow.style.display = "block";
+        uparrow.style.display = "none";
+    });
 }
 if (submit !== null) {
     submit.addEventListener('click', function(){
