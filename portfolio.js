@@ -92,6 +92,7 @@ if (education !== null) {
             educationpicture.style.width = "";
         }
         if (educationtitle) educationtitle.style.marginTop = "";
+
         if (educationtext) educationtext.style.width = "";
 
         // Skills
@@ -218,8 +219,8 @@ if (education !== null) {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    const music = document.getElementById('bg-music');
-    const toggle = document.getElementById('music-toggle');
+    let music = document.getElementById('bg-music');
+    let toggle = document.getElementById('music-toggle');
     let playing = false;
 
     if (toggle && music) {

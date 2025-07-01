@@ -475,6 +475,7 @@ h3 {
 .educationpicture {
     display: none;
     border-radius: 5%;
+    z-index: 100;
 }
 
 .skills {
@@ -485,6 +486,7 @@ h3 {
 .skillspicture {
     display: none;
     border-radius: 5%;
+    z-index: 100;
 }
 .skillstitle {
     text-align: center;
@@ -514,6 +516,7 @@ h3 {
 .aspirationspicture {
     display: none;
     border-radius: 5%;
+    z-index: 100;
 }
 
 .projects {
@@ -619,17 +622,17 @@ h3 {
     width: 90%;
 }
 .cssbar {
-    width: 70%;
+    width: 80%;
 }
 .jsbar {
     width: 50%;
 }
 
 .cbar {
-    width: 80%;
+    width: 70%;
 }
 .javabar {
-    width: 75%;
+    width: 70%;
 }
 .creditsbody {
     background-color: rgb(217,188,175);
