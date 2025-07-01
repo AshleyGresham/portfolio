@@ -637,6 +637,11 @@ h3 {
     text-align: center;
     overflow: hidden;
 }
+
+.navbar a:focus .homebutton {
+    outline: 1px solid #fcfdfd;
+}
+
 .topimages {
     display: flex;
     justify-content: center;
