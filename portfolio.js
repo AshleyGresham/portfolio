@@ -53,16 +53,32 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
-
+let down = false;
+ 
 if(downarrow !== null) {
-
     
     downarrow.addEventListener('click', function() {
         let target = document.querySelector('.aboutmecontainer');
         if (target) {
             target.scrollIntoView({ behavior: 'smooth' });
         }
+        down =! down;
     });
+    uparrow.addEventListener('click', function() {
+        let target = document.querySelector('.intro');
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+        down =! down;
+    });
+    if (down === false) {
+        downarrow.style.display = "block";
+        uparrow.style.display = "none";
+    }
+    if (down === true) {
+        downarrow.style.display = "none";
+        uparrow.style.display = "block";
+    }
 }
 if (submit !== null) {
     submit.addEventListener('click', function(){

@@ -173,6 +173,18 @@ h3 {
     cursor: pointer;
     animation: bounce 2s infinite;
 }
+.uparrow {
+    background-color: rgba(240, 248, 255, 0.749);
+    border-radius: 52%;
+    margin-top: 1%;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-left: 48.5%;
+    display: none;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+}
 
 @keyframes bounce {
   from {
@@ -191,6 +203,7 @@ h3 {
 }
 
 .aboutmesection h2 {
+    margin-top: 3%;
     text-align: center;
     font-size: 63px;
 }
